@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name ="description" content="Community Science Museum for kids - Our exhibits">
     <title>Community Science Museum | Exhibits</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="/stylesheet.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:wght@500&family=PT+Sans&display=swap" rel="stylesheet">
@@ -15,59 +15,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:wght@500&family=PT+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <a href="index.html">
-          <img src="images/Logo.png" alt="CSM logo" class="logo">
-        </a>
-        <nav id="hamnav">
-            <label for="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger"/>
-            <div id="hamitems">
-              <a href="index.html">Home</a>
-              <a href="explore.html">Explore</a>
-              <a href="exhibits.html">Exhibits</a>
-              <a href="visit.html">Visit</a>
-              <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+    <header class="flex column">
+        <div class="header flex">
+          <a href="index.html"><img src="images/Logo.png" alt="CSM logo" class="logo justify-center"></a>
+            <nav class="ham-nav flex">
+              <input type="checkbox" id="hamburger"/>
+              <label for="hamburger">&#9776;</label>
+                <div class="flex hamitems">
+                  <a href="index.html" class="hamlink hover1">Home</a>
+                  <a href="explore.html" class="hamlink hover2">Explore</a>
+                  <a href="exhibits.html" class="hamlink hover3">Exhibits</a>
+                  <a href="visit.html" class="hamlink hover1">Visit</a>
+                  <a href="contact.html" class="hamlink hover2">Contact</a>
+                </div>
+            </nav>
+        </div>    
     </header>
     <main>
-        <img src="images/header-exhib.jpg" alt="Illustration of three floors of a museum with different sectionsand people looking at them" class="header-exihib">
-        <div class="exhib-content">
-            <h1>Exhibits</h1>
-            <div class="robot">
-                <img src="images/robot.jpg" alt="Illustration of an robot" class="robot-img">
-                <h2>Robotics & AI</h2>
-                <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. 
-                    In our robotics and AI exhibition you will expreience first hand what our everyday life will be in the years to come. Speak with a computer in 50 different languages. 
-                    You can even say hello and shake the hand of Rob the Robot.</p>
+        <div class="header-exhib flex">
+            <div class="header-exhib-img flex max-width">
             </div>
-            <div class="chem">
-                <img src="images/chem.jpg" alt="Icon of chemestry glass" class="chem-img">
-                <h2>Chemestry</h2>
-                <p>Chemestry is all around us. It's the Foundation of organic life, but also bind toghether matter, whether it be a stone or a star. Discover the building blocks to our universe with interactive activities. You can study the elements and their properties in fun and engaging labrotory experiments. With simple everyday ingredients, we can make an vulcano errupt, or see liquids boil in freezing temperatures.</p>
+        </div>
+        <div class="margin">
+            <div class="flex justify-center">
+                <h1 class="h1-style-orange flex">Exhibits</h1>
             </div>
-            <div class="ecology">
-                <img src="images/ecology.jpg" alt="Illustration of different symbols of ecology" class="ecology-img">
-                <h2>Ecology</h2>
-                <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.
-                    In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-            </div>
-            <div class="biomed">
-                <img src="images/biomed.jpg" alt="Illustration of two scientists researching the human genom" class="biomed-img">
-                <h2>Biology & Medicine</h2>
-                <p>From microorganisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
-            </div>
-            <div class="evolution">
-                <img src="images/evolution.jpg" alt="Illustration of an evolutionary tree of animals" class*="evolution-img">
-                <h2>Evolution</h2>
-                <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world. Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
-            </div>
-            <div>
-                <img src="images/cosmo.jpg" alt="Illustration of astronaut in the cosmos" class="cosmos-img">
-                <h2>Cosmology</h2>
-                <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
-            </div>
+            <section class="exhib-content flex center-text max-width exhib-grid grid">
+                <div class="robot card a">
+                    <img src="images/robot.jpg" alt="Illustration of an robot" class="robot-img img-width border-orange">
+                    <h2>Robotics & AI</h2>
+                    <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. 
+                        In our robotics and AI exhibition you will expreience first hand what our everyday life will be in the years to come. Speak with a computer in 50 different languages. 
+                        You can even say hello and shake the hand of Rob the Robot.</p>
+                </div>
+                <div class="chem card b">
+                    <img src="images/chem.jpg" alt="Icon of chemestry glass" class="chem-img img-width border-pink">
+                    <h2>Chemestry</h2>
+                    <p>Chemestry is all around us. It's the Foundation of organic life, but also bind toghether matter, whether it be a stone or a star. Discover the building blocks to our universe with interactive activities. You can study the elements and their properties in fun and engaging labrotory experiments. With simple everyday ingredients, we can make an vulcano errupt, or see liquids boil in freezing temperatures.</p>
+                </div>
+                <div class="ecology card c">
+                    <img src="images/ecology.jpg" alt="Illustration of different symbols of ecology" class="ecology-img img-width border-yellow">
+                    <h2>Ecology</h2>
+                    <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.
+                        In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
+                </div>
+                <div class="biomed card d">
+                    <img src="images/biomed.jpg" alt="Illustration of two scientists researching the human genom" class="biomed-img img-width border-yellow">
+                    <h2>Biology & Medicine</h2>
+                    <p>From microorganisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+                </div>
+                <div class="evolution card e">
+                    <img src="images/evolution.jpg" alt="Illustration of an evolutionary tree of animals" class="evolution-img img-width border-orange">
+                    <h2>Evolution</h2>
+                    <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world. Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+                </div>
+                <div class="cosmo card f">
+                    <img src="images/cosmo.jpg" alt="Illustration of astronaut in the cosmos" class="cosmos-img img-width border-pink">
+                    <h2>Cosmology</h2>
+                    <p>Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by. Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
