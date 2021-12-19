@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    font-family: Anton, san-serif;
+    font-family: Anton, dm sans, san-serif;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -272,13 +272,6 @@ nav .hover3:hover {
 
 @media screen and (max-width: 745px) {
 
-    .ham-nav input:checked ~ .hamitems {
-      }
-
-    .sticky-header {
-        height: 67px;
-    }
-
     .ham-nav label {
         margin-right: 4px;
     }
@@ -473,6 +466,10 @@ i {
 }
 
 @media screen and (max-width: 745px) {
+
+    .text-home {
+        text-align: center;
+    }
     
     .night {
         margin-left: 0px;
@@ -611,6 +608,22 @@ i {
     }
 }
 
+@media screen and (max-width: 500px) {
+
+    .kids-img {
+        width: 240px;
+    }
+
+    .teacher-img {
+        width: 240px;
+    }
+
+    .research-img {
+        width: 240px;
+    }
+
+}
+
 /* Exhibits */
 
 .exhib-grid {
@@ -690,19 +703,20 @@ i {
 }
 
 .map {
-    max-width: 600px;
+    max-width: 500px;
     flex: 1;
     min-width: 275px;
     min-height: 275px;
 }
 
 .location {
-    max-width: 600px;
+    max-width: 500px;
     border: 5px solid #F1F2CE;
     flex: 1;
     min-height: 275px;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .location h2 {
@@ -716,25 +730,56 @@ i {
     width: fit-content;
 }
 
+.bottom-visit {
+    justify-content: space-around;
+    margin-top: 60px;   
+}
+
 .museum {
     max-width: 500px;
-    max-height: 500px;
-    margin: 40px;
+    flex: 1;
+    min-width: 275px;
+    min-height: 275px;
 }
 
-@media screen and (max-width: 1130px) {
-
-    
-}
-
-.visit-info {
-    margin: 40px 40px 40px 0px;
+.visit-info { 
+    max-width: 500px;
     border: 5px solid #f2d0f0;
-    padding: 30px 30px 0px 30px;
+    flex: 1;
+    min-height: 275px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.visit-info h2 {
-    margin: 0;
+@media screen and (max-width: 1250px) {
+
+    .visit-content {
+        align-items: center;
+    }
+
+    .top-visit {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .bottom-visit {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .map {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .museum {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 /* Contact */
@@ -743,8 +788,22 @@ i {
     justify-content: space-evenly;
 }
 
+.h2-form {
+    text-decoration: underline;
+    text-decoration-color: #F2C094;
+    text-decoration-thickness: 5px;
+}
+
+.h2-info {
+    text-decoration: underline;
+    text-decoration-color: #f2d0f0;
+    text-decoration-thickness: 5px;
+}
+
 .contact-info img {
-    max-width: 80px;
+    max-width: 60px;
+    padding-left: 15px;
+    padding-right: 25px;
 }
 
 .contact-info {
@@ -752,6 +811,37 @@ i {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     justify-content: space-around;
     flex: 1;
+    margin-top: 28px;
+}
+
+.form {
+    font-family: dm sans;
+    flex: 1;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    height: 25px;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    margin-top: 20px;
+    text-decoration: none;
+    width: 150px;
+    height: 60px;
+    color: black;
+    background-color: #F2C094;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
 .contact-content {
@@ -769,22 +859,20 @@ i {
 }
 
 .contact-map {
+    margin-top: 150px;
     min-width: 275px;
     min-height: 275px;
     flex: 1;
 }
 
-.form {
-
-}
-
 .contact-explore {
     background-color: #F1F2CE;
     width: 400px;
-    height: 300px;
+    height: 200px;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    align-self: center;
 }
 
 .contact-button {
@@ -801,4 +889,43 @@ i {
 
 .contact-button:hover {
     background-color:rgba(242, 208, 240, 0.5)
+}
+
+@media screen and (max-width: 1200px) {
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form {
+        max-width: 375px;
+    }
+
+    .contact-left {
+        max-width: 375px;
+        align-items: center;
+    }
+
+    .contact-right {
+        align-items: center;
+        max-width: 375px;
+        height: 375px;
+    }
+
+    .contact-map {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #F1F2CE;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
